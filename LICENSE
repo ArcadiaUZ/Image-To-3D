@@ -19,19 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-This project is an automation layer and Windows port helper built on top of
-third-party projects, which keep their own licenses:
-
-  trellis2cpp  — MIT License, https://github.com/localai-org/trellis2cpp
-                 Copyright (c) Microsoft Corporation (TRELLIS.2 weights)
-  ggml         — MIT License, https://github.com/ggml-org/ggml
-  TRELLIS.2    — MIT License, https://github.com/microsoft/TRELLIS.2
-  DINOv3       — https://github.com/facebookresearch/dinov3
-  purego       — MIT License, https://github.com/ebitengine/purego
-
-Model weights are NOT distributed in this repository. They are downloaded at
-install time from the LocalAI-io / microsoft Hugging Face repositories and
-remain subject to their original licenses.
