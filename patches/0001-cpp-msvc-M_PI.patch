@@ -1,0 +1,16 @@
+diff --git a/trellis2.cpp b/trellis2.cpp
+index 79511d6..2d4692f 100644
+--- a/trellis2.cpp
++++ b/trellis2.cpp
+@@ -22,6 +22,10 @@
+ #include <thread>
+ #include <unordered_map>
+ 
++#ifndef M_PI
++#define M_PI 3.14159265358979323846
++#endif
++
+ /*****************************************************************************
+ ** Helpers
+ *****************************************************************************/
+

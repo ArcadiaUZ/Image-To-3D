@@ -1,0 +1,49 @@
+# ============================================================
+#  Image-To-3D — hech qanday model/weight/binary yuklanmaydi
+#  (ular setup.bat orqali alohida yuklab olinadi)
+# ============================================================
+
+# --- modellar va yuklab olingan katta fayllar (~15 GB)
+models/
+workspace/
+out/
+work/
+generations/
+
+# --- Vulkan SDK qismlari (setup.ps1 yuklaydi)
+.vulkan/
+
+# --- Python muhiti
+.venv/
+__pycache__/
+*.pyc
+
+# --- build natijalari
+build/
+*.dll
+*.lib
+*.obj
+*.exe
+*.gguf
+*.safetensors
+*.bin
+
+# --- jurnallar
+*.log
+build.log
+provision.log
+server.log
+
+# --- maxfiy
+TOKENS.md
+.env
+*.token
+*credentials*
+
+# --- OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp

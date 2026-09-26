@@ -1,0 +1,16 @@
+diff --git a/server/engine.go b/server/engine.go
+index 62f4e2d..ec86de5 100644
+--- a/server/engine.go
++++ b/server/engine.go
+@@ -131,9 +131,9 @@ var (
+ // disable the 1024 cascade (512 fine only).
+ func newEngine(libPath, dinoGGUF, flowGGUF, decGGUF, slatGGUF, slatHRGGUF, shapeDecGGUF,
+ 	shapeEncGGUF, texDecGGUF, texFlowGGUF, texFlowHRGGUF string, startUnloaded bool) (*engine, error) {
+-	lib, err := purego.Dlopen(libPath, purego.RTLD_NOW|purego.RTLD_GLOBAL)
++	lib, err := openLib(libPath)
+ 	if err != nil {
+-		return nil, fmt.Errorf("dlopen %s: %w", libPath, err)
++		return nil, fmt.Errorf("open lib %s: %w", libPath, err)
+ 	}
+ 
+ 	e := &engine{models: engineModels{
